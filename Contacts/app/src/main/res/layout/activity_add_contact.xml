@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.androidapplication.contacts.AddContactActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Add Contact"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name: "
+        android:id="@+id/textViewAddName"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="eg. James Sweeney"
+        android:singleLine="true"
+        android:id="@+id/editTextAddName"
+        android:layout_marginTop="-10dp"
+        android:layout_alignTop="@+id/textViewAddName"
+        android:layout_alignStart="@+id/editTextAddAddress1"
+        android:layout_alignEnd="@+id/editTextAddAddress1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address Line 1: "
+        android:id="@+id/textViewAddAddress1"
+        android:textStyle="bold"
+        android:layout_below="@+id/editTextAddName"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextAddAddress1"
+        android:singleLine="true"
+        android:hint="7"
+        android:ems="10"
+        android:layout_marginTop="-10dp"
+        android:layout_alignTop="@+id/textViewAddAddress1"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address Line 2: "
+        android:textStyle="bold"
+        android:id="@+id/textViewAddAddress2"
+        android:layout_below="@+id/editTextAddAddress1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Rock Road"
+        android:singleLine="true"
+        android:id="@+id/editTextAddAddress2"
+        android:layout_alignTop="@+id/textViewAddAddress2"
+        android:layout_alignStart="@+id/editTextAddAddress1"
+        android:layout_alignEnd="@+id/buttonAddContact"
+        android:layout_marginTop="-10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="County: "
+        android:textStyle="bold"
+        android:id="@+id/textViewAddCounty"
+        android:layout_below="@+id/editTextAddAddress2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Dublin"
+        android:singleLine="true"
+        android:id="@+id/editTextAddCounty"
+        android:layout_alignTop="@+id/textViewAddCounty"
+        android:layout_alignStart="@+id/editTextAddAddress2"
+        android:layout_alignEnd="@+id/buttonAddContact"
+        android:layout_marginTop="-10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact No"
+        android:textStyle="bold"
+        android:id="@+id/textViewAddContactNo"
+        android:layout_below="@+id/editTextAddCounty"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editTextAddContactNo"
+        android:hint="eg.0877598256"
+        android:singleLine="true"
+        android:inputType="number"
+        android:layout_alignTop="@+id/textViewAddContactNo"
+        android:layout_alignStart="@+id/editTextAddAddress1"
+        android:layout_marginTop="-10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/buttonAddContact"
+        android:layout_marginBottom="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/editTextAddContactNo"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/buttonCancelAddingContact"
+        android:layout_alignEnd="@+id/buttonAddContact"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp"/>
+
+
+</RelativeLayout>

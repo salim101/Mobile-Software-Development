@@ -1,0 +1,67 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Full Address to Search"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:id="@+id/textViewSearchLocation" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Kevin Street Dublin 8"
+        android:id="@+id/editTextSearchLocation"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:layout_below="@+id/textViewSearchLocation"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/buttonSeachLocation"
+        android:layout_alignBottom="@+id/editTextSearchLocation"
+        android:layout_toEndOf="@+id/editTextSearchLocation" />
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="390dp"
+        android:layout_height="380dp" android:id="@+id/map"
+        android:layout_marginTop="120dp"
+        tools:context="com.example.androidapplication.contacts.MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/buttonZoomIn"
+        android:layout_below="@+id/editTextSearchLocation"
+        android:layout_alignStart="@+id/editTextSearchLocation" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/buttonZoomOut"
+        android:layout_below="@+id/editTextSearchLocation"
+        android:layout_toEndOf="@+id/buttonZoomIn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Map View"
+        android:id="@+id/buttonChangeMapView"
+        android:layout_alignTop="@+id/buttonZoomOut"
+        android:layout_toEndOf="@+id/buttonZoomOut" />
+
+</RelativeLayout>

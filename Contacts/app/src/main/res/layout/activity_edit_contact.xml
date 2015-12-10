@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#e0e0e0"
+    tools:context="com.example.androidapplication.contacts.EditContactActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Contact Details"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name: "
+        android:id="@+id/textViewFullName"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextFullName"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:layout_alignTop="@+id/textViewFullName"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address Line 1: "
+        android:textStyle="bold"
+        android:id="@+id/textViewAddress1"
+        android:layout_below="@+id/editTextFullName"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextAddress1"
+        android:singleLine="true"
+        android:layout_alignTop="@+id/textViewAddress1"
+        android:layout_alignStart="@+id/editTextFullName"
+        android:layout_alignEnd="@+id/editTextFullName"
+        android:layout_marginTop="-8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address Line 2: "
+        android:textStyle="bold"
+        android:id="@+id/textViewAddress2"
+        android:layout_below="@+id/editTextAddress1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextAddress2"
+        android:singleLine="true"
+        android:layout_alignTop="@+id/textViewAddress2"
+        android:layout_alignStart="@+id/editTextAddress1"
+        android:layout_alignEnd="@+id/editTextAddress1"
+        android:layout_marginTop="-8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="County: "
+        android:textStyle="bold"
+        android:id="@+id/textViewCounty"
+        android:layout_below="@+id/editTextAddress2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextCounty"
+        android:singleLine="true"
+        android:layout_alignTop="@+id/textViewCounty"
+        android:layout_alignStart="@+id/editTextAddress2"
+        android:layout_alignEnd="@+id/editTextAddress2"
+        android:layout_marginTop="-8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact No: "
+        android:textStyle="bold"
+        android:id="@+id/textViewContactNo"
+        android:layout_below="@+id/editTextCounty"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextContactNo"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_below="@+id/textViewContactNo"
+        android:layout_alignStart="@+id/editTextCounty"
+        android:layout_alignEnd="@+id/editTextCounty"
+        android:layout_marginTop="-25dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:id="@+id/buttonEdit"
+        android:layout_above="@+id/buttonGetLocation"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/buttonGetLocation" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find on Map"
+        android:id="@+id/buttonGetLocation"
+        android:layout_above="@+id/buttonDelete"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/buttonDelete" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/buttonDelete"
+        android:textColor="#ff1f0d"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        android:id="@+id/buttonSaveEdit"
+        android:layout_alignTop="@+id/buttonEdit"
+        android:layout_alignEnd="@+id/buttonEdit"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-15dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/buttonCancelEdit"
+        android:layout_above="@+id/buttonDelete"
+        android:layout_alignEnd="@+id/buttonGetLocation"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-15dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextID"
+        android:visibility="invisible"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

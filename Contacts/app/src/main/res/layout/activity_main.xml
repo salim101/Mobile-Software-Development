@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#e0e0e0">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonAdd"
+        android:src="@drawable/add"
+        android:layout_alignTop="@+id/imageButtonView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonView"
+        android:src="@drawable/view"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="35dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonSearch"
+        android:src="@drawable/search"
+        android:layout_marginTop="79dp"
+        android:layout_below="@+id/textViewAdd"
+        android:layout_alignEnd="@+id/textViewAdd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Add Contact"
+        android:id="@+id/textViewAdd"
+        android:layout_below="@+id/imageButtonAdd"
+        android:layout_alignEnd="@+id/imageButtonAdd"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="View Contacts"
+        android:id="@+id/textViewContacts"
+        android:layout_alignTop="@+id/textViewAdd"
+        android:layout_alignEnd="@+id/imageButtonView"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Seach Contact"
+        android:id="@+id/textViewSearch"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageButtonSearch"
+        android:layout_alignEnd="@+id/imageButtonSearch" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonEmergency"
+        android:src="@drawable/emergency"
+        android:layout_alignTop="@+id/imageButtonSearch"
+        android:layout_alignEnd="@+id/textViewContacts" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergecncy Info"
+        android:id="@+id/textViewEmergency"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/textViewSearch"
+        android:layout_alignStart="@+id/textViewContacts" />
+
+
+</RelativeLayout>
